@@ -16,6 +16,7 @@ The platform is designed as a microservices system with an API Gateway. The init
 ---
 
 ## Directory Structure
+```plaintext
 real-estate-platform/
 ├── services/
 │ ├── user-service/
