@@ -44,7 +44,7 @@ real-estate-platform/
 ├── docker-compose.yml
 ├── .gitignore
 └── README.md
-
+```
 
 
 ---
@@ -78,4 +78,4 @@ cd ../api-gateway
 npm install
 npm run dev
 
-
+```
