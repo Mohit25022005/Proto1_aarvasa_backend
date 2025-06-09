@@ -3,16 +3,16 @@ const User = require('../models/userModel');
 // Define pricing logic based on Aarvasa's models
 const getSubscriptionPrice = (role, plan, propertyValue) => {
   const ownerPricing = {
-    'basic': { '<40L': 1999, '40-60L': 2499, '60-90L': 3499, '>90L': 5499 },
+    'basic': { '<40L': 1199, '40-60L': 1799, '60-90L': 2499, '>90L': 3499 },
     'standard': { '<40L': 2499, '40-60L': 2999, '60-90L': 4199, '>90L': 5499 },
-    'premium': { '<40L': 0, '40-60L': 4999, '60-90L': 5999, '>90L': 8499 },
+    'premium': { '<40L': 0, '40-60L': 4499, '60-90L': 5999, '>90L': 8499 },
     'premium-plus': { '<40L': 0, '40-60L': 6499, '60-90L': 8499, '>90L': 9999 },
   };
   const renterPricing = {
     'basic': { '<5K': 499, '5-15K': 999, '15-40K': 1799, '>40K': 2499 },
     'standard': { '<5K': 0, '5-15K': 1999, '15-40K': 2999, '>40K': 4499 },
     'premium': { '<5K': 0, '5-15K': 2999, '15-40K': 4999, '>40K': 6999 },
-    'premium-plus': { '<5K': 0, '5-15K': 5999, '15-40K': 6999, '>40K': 8999 },
+    'premium-plus': { '<5K': 0, '5-15K': 0, '15-40K': 5999, '>40K': 8999 },
   };
   const agentPricing = {
     'abas-1m': 10500,
